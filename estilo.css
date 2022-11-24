@@ -48,3 +48,10 @@ nav a:hover{
   font-size: 50px;
   padding: 20px;
 }
+
+.footer{
+  background: #25161b;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
