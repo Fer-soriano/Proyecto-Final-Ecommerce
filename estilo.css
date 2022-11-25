@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500&display=swap');
+/*selector universal*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*selector de tipo*/
 body{
   font-family: 'Open Sans' ;
   background-color: #f3cba5;
@@ -30,6 +32,11 @@ nav a:hover{
    color: #fff;
 }
 
+h3 {
+  color:#25161b;
+}
+
+/*selector de clase*/
 .encabezado{
   background-image: url(img/img2.jpg);
   height: 400px;
@@ -56,7 +63,7 @@ nav a:hover{
   text-align: center;
 }
 
-
+/*selector id*/
 #bloque .container{
    text-align: center;
    padding: 200px 12px;
