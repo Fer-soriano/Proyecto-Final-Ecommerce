@@ -13,11 +13,14 @@ body{
 }
 
 header{
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
   background-color: #453953;
   text-align: center;
-  padding: 25px 0;
+  padding: 15px;
 }
-
+/*barra de navegacion*/
 nav a{
   display: inline-block;
   text-decoration: none;
@@ -34,6 +37,19 @@ nav a:hover{
 
 h3 {
   color:#25161b;
+}
+
+.nombre{
+  color:#fff;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 75px;
 }
 
 /*selector de clase*/
@@ -79,12 +95,3 @@ h3 {
   padding: 100px 0px;
 }
 
-#carta{
-  background-image: linear-gradient(
-    0deg,
-    rgb(0,0,0,0.5)
-    rgb(0,0,0,0.5)
-  )
-  url("img/logo.jpg");
-
-}
