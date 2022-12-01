@@ -14,7 +14,7 @@ body{
 
 header{
   display: flex;
-  height: 80px;
+  min-height: 70px;
   justify-content: space-between;
   background-color: #453953;
   text-align: center;
@@ -95,3 +95,12 @@ h3 {
   padding: 100px 0px;
 }
 
+@media(max-width:700px){
+  header{
+    flex-direction: column;
+  }
+
+  nav{
+    padding: 10px 0px ;
+  }
+}
