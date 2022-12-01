@@ -49,7 +49,7 @@ h3 {
 }
 
 .logo img{
-  height: 75px;
+  height: 55px;
 }
 
 /*selector de clase*/
@@ -95,6 +95,22 @@ h3 {
   padding: 100px 0px;
 }
 
+.input{
+  margin-top: 6vh;
+  width: 30vh;
+  height: 5vh;
+  border-radius: 10vh;
+  border: none;
+}
+.search {
+  margin-top: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*responsive header*/
 @media(max-width:700px){
   header{
     flex-direction: column;
