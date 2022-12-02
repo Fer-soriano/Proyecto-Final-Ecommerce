@@ -101,12 +101,14 @@ h3 {
   height: 5vh;
   border-radius: 10vh;
   border: none;
+  padding-right: 20;
 }
 .search {
   margin-top: 6vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 20;
 }
 
 
@@ -129,11 +131,19 @@ h1{
   text-align: center;
 }
 
+.contenedor {
+	display: grid;
+  grid-template-columns: repeat(4, 1fr); /*los elementos ocuparan 3 columnas*/
+ 
+
+}
+
 div.galeria{
-  margin: 10px 20 px;
-  box-shadow: 0 4px 8px 0 crimson, 0 6px 20px 0 black;
+  margin: 10px 20px;
+  box-shadow: 0 4px 8px 0 cornflowerblue, 0 6px 20px 0 black;
   float: left;
-  width: 350px;
+  width: 300px;
+  
 }
 
 div.galeria img{
@@ -141,13 +151,17 @@ div.galeria img{
    height: auto;
 }
 
+.foto{
+  text-align: center;
+}
+
 div.galeria:hover{
-  border: 1px solid lightcoral;
+  border: 1px solid cadetblue;
   transform: rotate(-3deg);
 }
 
 div.pie{
   text-align: center;
-  text-shadow: 2px 2px 5px purple;
   padding: 10 px;
 }
+
