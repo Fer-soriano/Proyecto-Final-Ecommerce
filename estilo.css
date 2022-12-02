@@ -9,7 +9,7 @@
 /*selector de tipo*/
 body{
   font-family: 'Open Sans' ;
-  background-color: #f3cba5;
+  background-color: white;
 }
 
 header{
@@ -119,4 +119,35 @@ h3 {
   nav{
     padding: 10px 0px ;
   }
+}
+
+
+/*Estilos del grid*/
+h1{
+  color:#25161b;
+  /*text-shadow: 1px 2px 2px black, 0 0 25px blue,  0 0 5px blue;*/
+  text-align: center;
+}
+
+div.galeria{
+  margin: 10px 20 px;
+  box-shadow: 0 4px 8px 0 crimson, 0 6px 20px 0 black;
+  float: left;
+  width: 350px;
+}
+
+div.galeria img{
+   width: 100px;
+   height: auto;
+}
+
+div.galeria:hover{
+  border: 1px solid lightcoral;
+  transform: rotate(-3deg);
+}
+
+div.pie{
+  text-align: center;
+  text-shadow: 2px 2px 5px purple;
+  padding: 10 px;
 }
