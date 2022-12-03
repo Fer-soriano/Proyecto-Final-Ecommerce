@@ -127,7 +127,7 @@ h3 {
 /*Estilos del grid*/
 h1{
   color:#25161b;
-  /*text-shadow: 1px 2px 2px black, 0 0 25px blue,  0 0 5px blue;*/
+  text-shadow: 1px 2px 2px black, 0 0 25px  #25161b,  0 0 5px  #25161b;
   text-align: center;
 }
 
@@ -140,7 +140,7 @@ h1{
 
 div.galeria{
   margin: 10px 20px;
-  box-shadow: 0 4px 8px 0 cornflowerblue, 0 6px 20px 0 black;
+  box-shadow: 0 4px 8px 0 #975a5e, 0 6px 20px 0 black;
   float: left;
   width: 300px;
   
