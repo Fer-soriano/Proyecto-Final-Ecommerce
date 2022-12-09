@@ -112,16 +112,7 @@ h3 {
 }
 
 
-/*responsive header*/
-@media(max-width:700px){
-  header{
-    flex-direction: column;
-  }
 
-  nav{
-    padding: 10px 0px ;
-  }
-}
 
 
 /*Estilos del grid*/
@@ -164,4 +155,31 @@ div.pie{
   text-align: center;
   padding: 10 px;
 }
+
+/*responsive header*/
+@media(max-width:700px){
+  header{
+    flex-direction: column;
+  }
+
+  nav{
+    padding: 10px 0px ;
+  }
+}
+
+/* Media Query para responsivo */
+
+/*para celulares o tables*/
+@media only screen and (min-width: 600px ) and (max-width: 991px ){
+   /*aqui se agregan los estilos*/
+
+}
+
+/*Dispositivos extra grandes*/
+@media only screen and (min-width: 600px ) and (max-width: 991px ){
+  /*aqui se agregan los estilos*/
+
+}
+
+
 
