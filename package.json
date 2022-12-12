@@ -1,0 +1,22 @@
+{
+  "name": "programacionweb-curso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.css css/style.css",
+    "watch-css": "nodemon -e scdd -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fer-soriano/ProgramacionWeb-Curso.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fer-soriano/ProgramacionWeb-Curso/issues"
+  },
+  "homepage": "https://github.com/Fer-soriano/ProgramacionWeb-Curso#readme"
+}

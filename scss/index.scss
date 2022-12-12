@@ -54,7 +54,7 @@ h3 {
 
 /*selector de clase*/
 .encabezado{
-  background-image: url(img/img2.jpg);
+  background-image: url(../img/img2.jpg);
   height: 400px;
   background-size: cover;
   display: flex;
@@ -112,50 +112,6 @@ h3 {
 }
 
 
-
-
-
-/*Estilos del grid*/
-h1{
-  color:#25161b;
-  text-shadow: 1px 2px 2px black, 0 0 25px  #25161b,  0 0 5px  #25161b;
-  text-align: center;
-}
-
-.contenedor {
-	display: grid;
-  grid-template-columns: repeat(4, 1fr); /*los elementos ocuparan 3 columnas*/
- 
-
-}
-
-div.galeria{
-  margin: 10px 20px;
-  box-shadow: 0 4px 8px 0 #975a5e, 0 6px 20px 0 black;
-  float: left;
-  width: 300px;
-  
-}
-
-div.galeria img{
-   width: 100px;
-   height: auto;
-}
-
-.foto{
-  text-align: center;
-}
-
-div.galeria:hover{
-  border: 1px solid cadetblue;
-  transform: rotate(-3deg);
-}
-
-div.pie{
-  text-align: center;
-  padding: 10 px;
-}
-
 /*responsive header*/
 @media(max-width:700px){
   header{
@@ -170,14 +126,25 @@ div.pie{
 /* Media Query para responsivo */
 
 /*para celulares o tables*/
-@media only screen and (min-width: 600px ) and (max-width: 991px ){
+@media only screen and (min-width: 600px) and (max-width: 991px){
    /*aqui se agregan los estilos*/
+   body{
+    background-color:#453953;
+   }
+   
+   .div.galeria img{
+    border-radius: 50px;
+    width: 20px;
+  }
 
 }
 
 /*Dispositivos extra grandes*/
-@media only screen and (min-width: 600px ) and (max-width: 991px ){
+@media only screen and  (max-width: 992px){
   /*aqui se agregan los estilos*/
+  body{
+    background-color:#975a5e;
+   }
 
 }
 
