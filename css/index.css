@@ -1,146 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500&display=swap");
-/*selector universal*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Undefined mixin.
+ *     ,
+ * 115 |     @include btnPrimario(120px, #25161b  );
+ *     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   scss\index.scss 115:5  root stylesheet */
 
-/*selector de tipo*/
-body {
-  font-family: "Open Sans";
-  background-color: white;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 115 \2502      @include btnPrimario(120px, #25161b  );\d\a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\index.scss 115:5  root stylesheet";
 }
-
-header {
-  display: flex;
-  min-height: 70px;
-  justify-content: space-between;
-  background-color: #453953;
-  text-align: center;
-  padding: 15px;
-}
-
-/*barra de navegacion*/
-nav a {
-  display: inline-block;
-  text-decoration: none;
-  color: #f3cba5;
-  margin: 0 30px;
-  padding: 5px 15px;
-  border-radius: 30px;
-}
-
-nav a:hover {
-  background-color: #25161b;
-  color: #fff;
-}
-
-h3 {
-  color: #25161b;
-}
-
-.nombre {
-  color: #fff;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 55px;
-}
-
-/*selector de clase*/
-.encabezado {
-  background-image: url(../img/img2.jpg);
-  height: 400px;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #975a5e;
-}
-
-.encabezado p {
-  font-size: 20px;
-}
-
-.encabezado h1 {
-  font-size: 50px;
-  padding: 20px;
-}
-
-.footer {
-  background: #25161b;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-/*selector id*/
-#bloque .container {
-  text-align: center;
-  padding: 200px 12px;
-}
-
-#productos {
-  background-color: #975a5e;
-  color: #fff;
-  text-align: center;
-}
-
-#productos .container {
-  padding: 100px 0px;
-}
-
-.input {
-  margin-top: 6vh;
-  width: 30vh;
-  height: 5vh;
-  border-radius: 10vh;
-  border: none;
-  padding-right: 20;
-}
-
-.search {
-  margin-top: 6vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 20;
-}
-
-/*responsive header*/
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
-  nav {
-    padding: 10px 0px;
-  }
-}
-/* Media Query para responsivo */
-/*para celulares o tables*/
-@media only screen and (min-width: 600px) and (max-width: 991px) {
-  /*aqui se agregan los estilos*/
-  body {
-    background-color: #453953;
-  }
-  .div.galeria img {
-    border-radius: 50px;
-    width: 20px;
-  }
-}
-/*Dispositivos extra grandes*/
-@media only screen and (max-width: 992px) {
-  /*aqui se agregan los estilos*/
-  body {
-    background-color: #975a5e;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */

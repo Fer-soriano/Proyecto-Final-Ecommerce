@@ -81,36 +81,49 @@ h3 {
   text-align: center;
 }
 
-/*selector id*/
-#bloque .container {
+section {
+  /*selector id*/
+}
+section #bloque .container {
   text-align: center;
   padding: 200px 12px;
 }
 
-#productos {
+section .titulo2, section .titulo1 {
+  /*  font-size: 30px;
+   border: 1px solid red;
+    text-align: center;
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    background: violet;*/
+  background: linear-gradient(45deg, red, blue);
+}
+section #productos {
   background-color: #975a5e;
   color: #fff;
   text-align: center;
 }
-
-#productos .container {
+section .container {
   padding: 100px 0px;
+  text-align: center;
+}
+section .btninfo {
+  background-color: #25161b;
+  width: 120px;
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
 }
 
+/*#productos .container{
+  padding: 100px 0px;
+}*/
 .input {
   margin-top: 6vh;
   width: 30vh;
   height: 5vh;
   border-radius: 10vh;
   border: none;
-  padding-right: 20;
-}
-
-.search {
-  margin-top: 6vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-right: 20;
 }
 
@@ -142,5 +155,9 @@ h3 {
     background-color: #975a5e;
   }
 }
+/*
+.btninfo{
+    @include btnPrimario(120px, greenyellow);
+}*/
 
 /*# sourceMappingURL=style.css.map */

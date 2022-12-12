@@ -1,0 +1,7 @@
+@mixin btnPrimario($ancho, $colorFondo){
+    background-color: $colorFondo;
+    width: $ancho;
+    padding: 10px;
+    margin: 5px;
+    color:#fff;
+}
