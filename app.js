@@ -88,13 +88,11 @@ const carritoContenedor = document.querySelector("#carritoContenedor");
 const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const precioTotal = document.querySelector("#precioTotal");
 
-
 //guardar datos en el LocalStorage
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
     carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     mostrarCarrito()
 })
-
 
 stockProductos.forEach((prod) => {
     const { id, nombre, precio, desc, img, cantidad } = prod
@@ -112,6 +110,9 @@ stockProductos.forEach((prod) => {
     `
 });
 
+
+
+
 //vaciar el carrito
 vaciarCarrito.addEventListener('click', () => {
     carrito.length = []
@@ -119,9 +120,23 @@ vaciarCarrito.addEventListener('click', () => {
 })
 
 function agregarProducto(id) {
-    const item = stockProductos.find((prod) => prod.id === id)
-    carrito.push(item)
-    mostrarCarrito()
+    /*contabilizar 2 productos iguales */
+    const existe = carrito.some(prod => prod.id === id)
+
+    if (existe) {
+        const prod = carrito.map(prod => {
+            if (prod.id === id) {
+                prod.cantidad++;
+            }
+        })
+    } else {
+
+        const item = stockProductos.find((prod) => prod.id === id)
+        carrito.push(item)
+
+    }
+
+    mostrarCarrito();
 }
 
 //mostrar los productos en el carrito
@@ -145,19 +160,27 @@ const mostrarCarrito = () => {
         </div>
       </div>
       `
-    });
+    })
+
     //hacer un conteo de los productos agregados en el icono del carrito
-    if (carrito.length === 0) {
-        console.log("Nada");
-        modalBody.innerHTML = `
-        <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
-        `;
-    } else {
-        console.log("Algo");
-    }
+    /*   if (carrito.length === 0) {
+           console.log("Nada");
+           modalBody.innerHTML = `
+           <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
+           `;
+       } else {
+           console.log("Algo");
+       }*/
     carritoContenedor.textContent = carrito.length
 
+    //precio total de los productos
+    precioTotal.textContent = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0);
+
     guardarStorage();
+};
+
+function guardarStorage() {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
 function eliminarProducto(id) {
@@ -166,6 +189,3 @@ function eliminarProducto(id) {
     mostrarCarrito()
 }
 
-function guardarStorage() {
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-}
