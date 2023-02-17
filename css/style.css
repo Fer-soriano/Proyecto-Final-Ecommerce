@@ -81,26 +81,17 @@ h3 {
   text-align: center;
 }
 
-section {
   /*selector id*/
-}
+
 section #bloque .container {
   text-align: center;
   padding: 200px 12px;
 }
 
-section .titulo2, section .titulo1 {
-  /*  font-size: 30px;
-   border: 1px solid red;
-    text-align: center;
-    color: rgb(255,255,255);
-    border-radius: 10px;
-    background: violet;*/
-  background: linear-gradient(45deg, red, blue);
-}
+
 section #productos {
   background-color: #975a5e;
-  color: #fff;
+  color: #F0997D;
   text-align: center;
 }
 section .container {
