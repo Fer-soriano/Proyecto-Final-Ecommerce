@@ -80,7 +80,7 @@ const contenedor = document.querySelector('#contenedor');
 const carritoContenedor = document.querySelector("#carritoContenedor");
 const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const precioTotal = document.querySelector("#precioTotal");
-const procesarCompra= document.querySelector("#procesarCompra");
+
 
 //guardar datos en el LocalStorage
 document.addEventListener('DOMContentLoaded', () => {
@@ -104,16 +104,12 @@ stockProductos.forEach((prod) => {
     `
 });
 
-/*procesarCompra.addEventListener((prod) => {
-    if (carrito.length === 0) {
-     alert "No existen productos en el carrito "
-}else{
+procesarCompra.addEventListener("click", ()=>{
+    alert('GRACIAS POR TU COMPRA!!')
     carrito.length = []
+    mostrarCarrito()
 
-}
-
-})*/
-
+})
 
 
 //vaciar el carrito
