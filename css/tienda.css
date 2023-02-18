@@ -23,9 +23,9 @@ header{
 /*barra de navegacion*/
 nav a{
   display: inline-block;
-  text-decoration: none;
+  text-decoration: dashed;
   color: #f3cba5;
-  margin: 0 30px;
+  margin: 0 20px;
   padding: 0px 15px;
   border-radius: 20px;
 }
