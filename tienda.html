@@ -37,8 +37,15 @@
 
   </header>
 
+  <section class="encabezado">
+    <h1>Nuestros Productos!!</h1>
+    <p>Conoce nuestros nuevos perfumes!!</p>
+  </section>
+
+
   <main>
     <div class="row mt-5" id="contenedor"></div>
+    <p>.</p>
   </main>
 
 
@@ -56,13 +63,9 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" id="vaciarCarrito">
-              Vaciar carrito
-            </button>
-
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              Cerrar
-            </button>
+            <button type="button" class="btn btn-danger" id="vaciarCarrito">Vaciar carrito</button>
+            <button type="button" id="procesarCompra" class="btn btn-primary">Continuar compra</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
 
             <span>Precio total:</span>
             <p class="text-center" id="precioTotal"></p>
@@ -73,7 +76,7 @@
   </div>
 
   <script src="/app.js"></script>
-  <script src="/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
