@@ -80,6 +80,7 @@ const contenedor = document.querySelector('#contenedor');
 const carritoContenedor = document.querySelector("#carritoContenedor");
 const vaciarCarrito = document.querySelector("#vaciarCarrito");
 const precioTotal = document.querySelector("#precioTotal");
+const procesarCompra= document.querySelector("#procesarCompra");
 
 //guardar datos en el LocalStorage
 document.addEventListener('DOMContentLoaded', () => {
@@ -103,6 +104,15 @@ stockProductos.forEach((prod) => {
     `
 });
 
+/*procesarCompra.addEventListener((prod) => {
+    if (carrito.length === 0) {
+     alert "No existen productos en el carrito "
+}else{
+    carrito.length = []
+
+}
+
+})*/
 
 
 
@@ -156,14 +166,14 @@ const mostrarCarrito = () => {
     })
 
     //hacer un conteo de los productos agregados en el icono del carrito
-    /*   if (carrito.length === 0) {
-           console.log("Nada");
-           modalBody.innerHTML = `
+    if (carrito.length === 0) {
+        console.log("Nada");
+        modalBody.innerHTML = `
            <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
            `;
-       } else {
-           console.log("Algo");
-       }*/
+    } else {
+        console.log("Algo");
+    }
     carritoContenedor.textContent = carrito.length
 
     //precio total de los productos
