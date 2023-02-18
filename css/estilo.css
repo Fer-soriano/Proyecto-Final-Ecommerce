@@ -207,7 +207,7 @@ h3 {
 /* Media Query para responsivo */
 
 /*para celulares o tables*/
-@media only screen and (min-width: 600px) and (max-width: 991px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
 
   /*aqui se agregan los estilos*/
   body {
@@ -246,6 +246,11 @@ h3 {
     height: 400px;
     border-radius: 50%;
     object-position: cover;
+  }
+
+  #contact{
+    padding: 0 20px;
+    grid-template: auto 100px / 100% ;
   }
 
 
